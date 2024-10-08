@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding-->
+  <meta charset="UTF-8">
+  <!--Resonsive design-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple homepage to showcase my projects and articles.">
+  <!--title of the webpage-->
+  <title>Basic HTML Website</title>
+  <!--SEO keywords-->
+  <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh, projects">
+  <!--Author of the webpage-->
+  <meta name="author" content="Efuetanu Collins Avwerosuo">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!--CSS link external stylesheet-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--Header section-->
+  <header>
+    <h1>Efuetanu Collins Avwerosuo</h1>
+    <!--Navigation menu-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--introduction Section-->
+    <section class="intro">
+      <h1>Frontend Developer</h1>
+      <p>A website where you can find my list of all my projects</p>
+    </section>
+<!--Projects section-->
+<hr>
+<hr>
+<section class="projects">
+  <h2>
+    Projects
+  </h2>
+    <ul>
+      <li>
+        HTML Only Portfolio
+      </li>
+      <li>
+        Calculator
+      </li>
+      <li>
+        Quiz App
+      </li>
+      <li>
+        Countdown Timer
+      </li>
+      <li>Product Upcoming Page</li>
+    </ul>
+</section>
+<!--Articles section-->
+<section class="articles">
+    <h2>Articles</h2>
+      <ul>
+        <li>
+          <h3>Semantically correct HTML structure.</h3>
+          <p>A deep dive into why semantic HTML is crucial</p>
+        </li>
+        <li>
+          <h3>Importance of CSS and Html5</h3>
+          <p>A tutorial on using CSS grid to cretae a responsive, modern web design.</p>
+        </li>
+      </ul>
+</section>
+<!--work experience section-->
+<section class="work-experience">
+  <h3>OpenSource Work</h3>
+  <p>Contributed to 50 opensource projects. Made my own projects with 200 Github Stars</p>
+  <a href="https://www.github.com/Collinzo2022">Visit my Github Profile</a>
+
+
+</section>
+<!--Education section-->
+<section class="education">
+  <h2>Education</h2>
+  <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+  <p>Courses l took:</p>
+  <ul>
+    <li>Object Oriented Programming</li>
+    <li>Data Structures and Algorithms</li>
+    <li>Web Engineering</li>
+    <li>Artificial Intelligence</li>
+    <li>Human Computer Interaction</li>
+    <li>Computer Graphics</li>
+    <li>Database Management Systems</li>
+    <li>Distributed Database Systems</li>
+    <li>Discreet Mathematics</li>
+  </ul>
+
+</section>
+<!--Reviews section(from teachers)-->
+<aside class="reviews">
+  <h2>Reviews From my Teachers</h2>
+  <blockquote>
+    <p>Efuetanu .A. Collins, was a brilliant student; always stood out with his assignments.
+    </p>
+    <footer>Efuetanu .A. Collins, Assistant Professor</footer>
+  </blockquote>
+  <blockquote>
+    <p>Efuetanu .A. Collins, was a brilliant student; always stood out with his assignment</p>
+    <footer>Jane Doe Asistant Professor</footer>
+  </blockquote>
+  <blockquote>
+    <p>Efuetanu .A. Collins, was a brilliant student; always stood out with his assignment</p>
+    <footer>Jane Doe Asistant Professor</footer>
+  </blockquote>
+
+
+</aside>
+
+<!--Contact form-->
+<section class="contact">
+  <h2>Contact Me</h2>
+  <form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submt">Send Message</button>
+  </form>
+
+</section>
+
+</main>
+<!--Footer section-->
+<footer>
+  <p>&copy; all rights reserved 2024</p>
+</footer>
+
+</body>
+</html>

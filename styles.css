@@ -1,0 +1,238 @@
+/*Reset the default styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*base styling for the body*/
+body {
+  font-family: 'Roboto', sans-serif; /*Google Font*/
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+
+}
+/*header styling*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+}
+
+/*header h1 styling*/
+header h1 {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+}
+
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative; /* needed for  ::before positioning*/
+}
+
+nav ul li:not(:first-child)::before {
+  content: "/";
+  position: absolute;
+  left: -13px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+nav a:hover {
+  color: #ff9900;
+}
+
+/* main section styling*/
+main {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Project section styling */
+.projects h2, .articles h2, h3, .work-experience h3, .education h2, .reviews h2, .contact h2 {
+  margin-bottom: 11px;
+  color: #333;
+}
+
+.projects li, .articles li {
+  margin-bottom: 10px;
+
+}
+
+.articles li h3 {
+  margin: 0;
+  color: #333;
+}
+
+.articles li p {
+  margin: 5px 0;
+}
+
+/* work experience styling */
+.work-experience p, .work-experience a {
+  font-size: 1.1rem;
+}
+
+.work-experience a {
+  text-decoration: none;
+
+}
+
+.work-experience a:hover {
+  text-decoration: underline;
+}
+
+/* Education section */
+.education ul {
+  list-style-type:circle;
+  padding-left: 20px;
+}
+.education li {
+  margin-bottom: 5px;
+}
+
+/* Reviews section */
+.reviews {
+  background-color: #eee;
+  padding: 20px;
+  margin-top:10px;
+}
+.reviews h2 {
+  text-align: center;
+}
+.reviews blockquote {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0,0,0, 0.1);
+  color: #555;
+  font-style: italic;
+
+}
+
+.reviews blockquote footer {
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+}
+blockquote {
+  margin: 0 0 20px 0;
+  padding-left: 15px;
+  border-left: 3px solid #333;
+  color: #555;
+}
+
+blockquote footer {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #777;
+}
+
+/* Contact form */
+.contact h2 {
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form label {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.contact form input, .contact form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact form button:hover {
+  background-color: #ff9900;
+}
+
+/* footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  width: 100%;
+
+}
+
+/*media queries for responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+  margin-top: 5px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .projects ul, .articles ul, .education ul {
+    padding-left: 0;
+  }
+
+  .projects li, .articles li, .education li {
+    margin-left: 20px;
+  }
+}
